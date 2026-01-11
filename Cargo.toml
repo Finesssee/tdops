@@ -1,0 +1,18 @@
+[package]
+name = "tdops"
+version = "0.1.0"
+edition = "2024"
+description = "Tailscale + DigitalOcean droplet ops CLI"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.12", features = ["json"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+anyhow = "1"
+chrono = "0.4"
+tabled = "0.17"
+colored = "2"
+dirs = "5"
+toml = "0.8"
